@@ -13,20 +13,9 @@ FoamFile
     class       regIOobject;
     location    "constant/polyMesh";
     object      pointZones;
-    meta
-    {
-        names           ( frozenPoints );
-    }
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-1
-(
-frozenPoints
-{
-    type            pointZone;
-    pointLabels     List<label> 0;
-}
-)
+0()
 
 // ************************************************************************* //

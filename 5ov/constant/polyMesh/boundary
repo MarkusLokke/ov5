@@ -18,43 +18,42 @@ FoamFile
 
 6
 (
-    frontAndBack
+    front
     {
         type            patch;
-        nFaces          2020;
-        startFace       6006;
+        nFaces          5000;
+        startFace       9850;
+    }
+    back
+    {
+        type            patch;
+        nFaces          5000;
+        startFace       14850;
     }
     inlet
     {
         type            patch;
-        nFaces          21;
-        startFace       8026;
+        nFaces          50;
+        startFace       19850;
     }
     outlet
     {
         type            patch;
-        nFaces          21;
-        startFace       8047;
+        nFaces          50;
+        startFace       19900;
     }
     lowerWall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          40;
-        startFace       8068;
+        nFaces          100;
+        startFace       19950;
     }
     upperWall
     {
         type            patch;
-        nFaces          40;
-        startFace       8108;
-    }
-    donald313
-    {
-        type            wall;
-        inGroups        2(donald313Group wall);
-        nFaces          436;
-        startFace       8148;
+        nFaces          100;
+        startFace       20050;
     }
 )
 
